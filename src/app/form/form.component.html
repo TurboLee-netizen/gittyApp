@@ -1,0 +1,18 @@
+<form #gitForm="ngForm">
+    <div class="form-group search">
+        
+        <input class="form-control"
+          type="text"
+          class="regular"
+          [(ngModel)]="username"
+          #name="ngModel"
+          required
+          name="username"
+          placeholder="GitHub login"
+          size="50"
+        />
+        
+      </div>
+      <button (click)="submitQuery()" class="btn btn-success"><i class="fa fa-search"></i></button>
+</form>
+
